@@ -1,0 +1,9 @@
+->Command to dowload the dataset
+bash ./datasets/download_dataset.sh mpas
+
+->Command to train the dataset
+python3 main.py --phase train --dataset_name maps --lambda_A 1000.0 --lambda_B 1000.0 --epoch 100
+
+->Command to test the dataset
+python3 main.py --phase test --dataset_name maps --lambda_A 1000.0 --lambda_B 1000.0 --epoch 100
+
